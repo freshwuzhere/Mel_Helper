@@ -1,0 +1,274 @@
+[
+  {
+    "selected" : false,
+    "frame" : "{{0, 0}, {686, 396}}",
+    "class" : "View",
+    "nodes" : [
+      {
+        "selected" : false,
+        "frame" : "{{122, 110}, {100, 80}}",
+        "class" : "Label",
+        "nodes" : [
+
+        ],
+        "attributes" : {
+          "font_size" : 72,
+          "frame" : "{{285, 184}, {150, 32}}",
+          "uuid" : "C5577258-4A15-4C61-B5CF-029B284B5172",
+          "class" : "Label",
+          "alignment" : "left",
+          "text" : "00",
+          "name" : "hours_to_go",
+          "font_name" : "AmericanTypewriter-Bold"
+        }
+      },
+      {
+        "selected" : false,
+        "frame" : "{{219, 110}, {20, 80}}",
+        "class" : "Label",
+        "nodes" : [
+
+        ],
+        "attributes" : {
+          "font_size" : 72,
+          "frame" : "{{285, 184}, {150, 32}}",
+          "uuid" : "1900B3CC-5CB6-4AE4-9D52-CBB3457A54CF",
+          "class" : "Label",
+          "alignment" : "left",
+          "text" : ":",
+          "name" : "label1",
+          "font_name" : "AmericanTypewriter-Bold"
+        }
+      },
+      {
+        "selected" : false,
+        "frame" : "{{239.5, 110}, {100, 80}}",
+        "class" : "Label",
+        "nodes" : [
+
+        ],
+        "attributes" : {
+          "name" : "mins_to_go",
+          "frame" : "{{285, 184}, {150, 32}}",
+          "uuid" : "C5577258-4A15-4C61-B5CF-029B284B5172",
+          "class" : "Label",
+          "alignment" : "center",
+          "text" : "00",
+          "font_size" : 72,
+          "font_name" : "AmericanTypewriter-Bold"
+        }
+      },
+      {
+        "selected" : false,
+        "frame" : "{{340, 110}, {20, 80}}",
+        "class" : "Label",
+        "nodes" : [
+
+        ],
+        "attributes" : {
+          "name" : "label1",
+          "frame" : "{{285, 184}, {150, 32}}",
+          "uuid" : "1900B3CC-5CB6-4AE4-9D52-CBB3457A54CF",
+          "class" : "Label",
+          "alignment" : "left",
+          "text" : ":",
+          "font_size" : 72,
+          "font_name" : "AmericanTypewriter-Bold"
+        }
+      },
+      {
+        "selected" : false,
+        "frame" : "{{362, 110}, {100, 80}}",
+        "class" : "Label",
+        "nodes" : [
+
+        ],
+        "attributes" : {
+          "font_size" : 72,
+          "frame" : "{{285, 184}, {150, 32}}",
+          "uuid" : "C5577258-4A15-4C61-B5CF-029B284B5172",
+          "class" : "Label",
+          "alignment" : "center",
+          "text" : "00",
+          "name" : "secs_to_go",
+          "font_name" : "AmericanTypewriter-Bold"
+        }
+      },
+      {
+        "selected" : false,
+        "frame" : "{{281, 28}, {120, 40}}",
+        "class" : "DatePicker",
+        "nodes" : [
+
+        ],
+        "attributes" : {
+          "action" : "pick_start_time",
+          "frame" : "{{200, 92}, {320, 216}}",
+          "mode" : 0,
+          "border_color" : "RGBA(1.000000,0.260870,0.260870,1.000000)",
+          "class" : "DatePicker",
+          "uuid" : "A07F1B1E-6CC5-4925-BE46-EFF5C5404FA7",
+          "name" : "start_time_picker"
+        }
+      },
+      {
+        "selected" : false,
+        "frame" : "{{190, 28}, {100, 40}}",
+        "class" : "Label",
+        "nodes" : [
+
+        ],
+        "attributes" : {
+          "font_size" : 18,
+          "frame" : "{{285, 184}, {150, 32}}",
+          "uuid" : "135A2D7B-46AA-4093-8510-A529B092B512",
+          "class" : "Label",
+          "alignment" : "left",
+          "text" : "Start Time",
+          "name" : "start_time_label",
+          "font_name" : "<System>"
+        }
+      },
+      {
+        "selected" : true,
+        "frame" : "{{460, 28}, {135, 48}}",
+        "class" : "Button",
+        "nodes" : [
+
+        ],
+        "attributes" : {
+          "action" : "set_start_time",
+          "border_width" : 2,
+          "frame" : "{{320, 184}, {80, 32}}",
+          "title" : "Set Start Time",
+          "uuid" : "555300C0-B9D9-440E-800F-0C9B09BAFBE6",
+          "class" : "Button",
+          "corner_radius" : 2,
+          "border_color" : "RGBA(0.000000,0.000000,1.000000,1.000000)",
+          "name" : "set_start_time_button",
+          "font_size" : 15
+        }
+      },
+      {
+        "selected" : false,
+        "frame" : "{{480, 110}, {60, 80}}",
+        "class" : "Label",
+        "nodes" : [
+
+        ],
+        "attributes" : {
+          "name" : "decimals_to_go",
+          "frame" : "{{285, 184}, {150, 32}}",
+          "uuid" : "C5577258-4A15-4C61-B5CF-029B284B5172",
+          "class" : "Label",
+          "alignment" : "center",
+          "text" : "0",
+          "font_size" : 72,
+          "font_name" : "AmericanTypewriter-Bold"
+        }
+      },
+      {
+        "selected" : false,
+        "frame" : "{{460, 110}, {20, 80}}",
+        "class" : "Label",
+        "nodes" : [
+
+        ],
+        "attributes" : {
+          "font_size" : 72,
+          "frame" : "{{285, 184}, {150, 32}}",
+          "uuid" : "1900B3CC-5CB6-4AE4-9D52-CBB3457A54CF",
+          "class" : "Label",
+          "alignment" : "left",
+          "text" : ".",
+          "name" : "label1",
+          "font_name" : "AmericanTypewriter-Bold"
+        }
+      },
+      {
+        "selected" : false,
+        "frame" : "{{69, 221}, {135, 48}}",
+        "class" : "Button",
+        "nodes" : [
+
+        ],
+        "attributes" : {
+          "action" : "pick_port_entry",
+          "border_width" : 2,
+          "frame" : "{{320, 184}, {80, 32}}",
+          "title" : "PORT ENTRY",
+          "uuid" : "555300C0-B9D9-440E-800F-0C9B09BAFBE6",
+          "class" : "Button",
+          "corner_radius" : 2,
+          "border_color" : "RGBA(0.000000,0.000000,1.000000,1.000000)",
+          "name" : "pick_port_entry_button",
+          "font_size" : 15
+        }
+      },
+      {
+        "selected" : false,
+        "frame" : "{{441, 221}, {135, 48}}",
+        "class" : "Button",
+        "nodes" : [
+
+        ],
+        "attributes" : {
+          "action" : "pick_stbd_entry",
+          "border_width" : 2,
+          "frame" : "{{320, 184}, {80, 32}}",
+          "title" : "STBD ENTRY",
+          "uuid" : "555300C0-B9D9-440E-800F-0C9B09BAFBE6",
+          "class" : "Button",
+          "corner_radius" : 2,
+          "border_color" : "RGBA(0.000000,0.000000,1.000000,1.000000)",
+          "name" : "pick_stbd_entry_button",
+          "font_size" : 15
+        }
+      },
+      {
+        "selected" : false,
+        "frame" : "{{6, 289}, {246, 60}}",
+        "class" : "Label",
+        "nodes" : [
+
+        ],
+        "attributes" : {
+          "name" : "port_boat",
+          "frame" : "{{268, 182}, {150, 32}}",
+          "uuid" : "2F07CB1D-34F9-4545-B384-D69E9FD73EBB",
+          "class" : "Label",
+          "alignment" : "center",
+          "text" : "PORT BOAT",
+          "font_size" : 24,
+          "font_name" : "<System>"
+        }
+      },
+      {
+        "selected" : false,
+        "frame" : "{{384.5, 289}, {246, 60}}",
+        "class" : "Label",
+        "nodes" : [
+
+        ],
+        "attributes" : {
+          "font_size" : 24,
+          "frame" : "{{268, 182}, {150, 32}}",
+          "uuid" : "2F07CB1D-34F9-4545-B384-D69E9FD73EBB",
+          "class" : "Label",
+          "alignment" : "center",
+          "text" : "STBD BOAT",
+          "name" : "stbd_boat",
+          "font_name" : "<System>"
+        }
+      }
+    ],
+    "attributes" : {
+      "tint_color" : "RGBA(0.000000,0.478000,1.000000,1.000000)",
+      "enabled" : true,
+      "border_color" : "RGBA(0.000000,0.000000,0.000000,1.000000)",
+      "background_color" : "RGBA(1.000000,1.000000,1.000000,1.000000)",
+      "name" : "Mel_Helper",
+      "flex" : ""
+    }
+  }
+]
