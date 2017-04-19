@@ -3,7 +3,7 @@ import datetime
 import time
 from dialogs import list_dialog
 from math import floor
-#import speech
+import speech
 
 # Add Globals
 start_time = datetime.datetime.now() + datetime.timedelta(hours=1)
@@ -11,7 +11,10 @@ port_entry = "OTUSA"
 stbd_entry = "ARTEMIS"
 start_time_pick = start_time
 v = None
+sound_set = True
 possible_boats = ['OTUSA','SBTJ','ARTEMIS','LRBAR','GROUPAMA','ETNZ']
+old_stg = 0
+old_mtg = 0
 
 def pick_start_time(sender):
 	global start_time_pick
@@ -55,6 +58,14 @@ def pick_stbd_entry(sender):
 	
 	p_b_ui.text = selected_boats_list
 	
+def set_sound(sender):
+	global v
+	global sound_set
+	
+	ss = v['sound_switch']
+	sound_set = ss.value
+	speech.say('sound set ' + str(ss.value))
+	
 def set_start_time(sender):
 	global start_time
 	global start_time_pick
@@ -68,8 +79,18 @@ def set_start_time(sender):
 	
 def set_count_down(st_time, htg_lab , mtg_lab , stg_lab, dtg_lab):
 	global start_time
+	global old_mtg
+	global old_stg
+	global sound_set
 	
-	delta = (start_time - datetime.datetime.now())
+	NOW = datetime.datetime.now()
+	if start_time >= NOW :
+		delta = (start_time - NOW)
+		count_down = True
+	else:
+		delta = (NOW - start_time )
+		count_down = False
+		
 	secs = delta.total_seconds()
 	
 	htg = secs // 3600
@@ -86,6 +107,25 @@ def set_count_down(st_time, htg_lab , mtg_lab , stg_lab, dtg_lab):
 	
 #	print('formatted time' + htg_s + ':' +  mtg_s + ':' + stg_s + '.' + dtg_s)	
 #	print('secs = ' + str(secs) + 'trunc secs' + str(secs//1) )
+
+#	test for speech - start with seconds		
+	htg_r = floor(htg)
+	mtg_r = floor(mtg)
+	stg_r = floor(stg)
+	#print('old = ' + str(old_stg) + 'stg_r = ' + str(stg_r))
+	if sound_set:
+		if old_mtg != mtg_r:
+			speech.say('{:.0f}'.format(mtg_r + 1) + ' minutes')
+		elif  old_stg != stg_r:
+			if stg <= 10 and count_down and mtg_r == 0 and htg_r == 0  :
+				speech.say('{:.0f}'.format(stg_r + 1))
+	if round(stg,1) == 0 and mtg_r == 0  and htg_r ==0 :
+		speech.say("START")
+				
+					
+			
+	old_mtg = mtg_r
+	old_stg = stg_r
 	
 	htg_lab.text = htg_s
 	mtg_lab.text = mtg_s
