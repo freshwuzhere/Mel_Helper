@@ -118,7 +118,7 @@ def set_count_down(st_time, htg_lab , mtg_lab , stg_lab, dtg_lab):
 		if old_mtg != mtg_r:
 			speech.say('{:.0f}'.format(mtg_r + 1) + ' minutes')
 		elif stg_x10 != old_stg_x10:
-			if mtg_r == 0 and htg_r == 0:
+			if mtg_r == 0 and htg_r == 0 and count_down:
 				speech.say('{:.0f} seconds'.format(stg_x10+10))
 		elif  old_stg != stg_r:
 			if stg <= 10 and count_down and mtg_r == 0 and htg_r == 0  :
