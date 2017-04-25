@@ -115,7 +115,7 @@ def set_count_down(st_time, htg_lab , mtg_lab , stg_lab, dtg_lab):
 	stg_r = floor(stg)
 	#print('old = ' + str(old_stg) + 'stg_r = ' + str(stg_r))
 	if sound_set:
-		if old_mtg != mtg_r:
+		if old_mtg != mtg_r and count_down:
 			speech.say('{:.0f}'.format(mtg_r + 1) + ' minutes')
 		elif stg_x10 != old_stg_x10:
 			if mtg_r == 0 and htg_r == 0 and count_down:
@@ -136,7 +136,11 @@ def set_count_down(st_time, htg_lab , mtg_lab , stg_lab, dtg_lab):
 	mtg_lab.text = mtg_s
 	stg_lab.text = stg_s
 	dtg_lab.text = dtg_s
-	
+
+def will_close(self):
+	self.close
+	return 
+		
 def main():
 	global v
 	global start_time
@@ -153,8 +157,6 @@ def main():
 	m_t_g = v['mins_to_go']
 	s_t_g = v['secs_to_go']
 	d_t_g = v['decimals_to_go']
-	
-
 
 	while True:
 		set_count_down(start_time,
@@ -166,4 +168,5 @@ def main():
 
 if __name__ == '__main__':
 	main()
+	sys.exit()
 

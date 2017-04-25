@@ -1,7 +1,7 @@
 [
   {
     "selected" : false,
-    "frame" : "{{0, 0}, {686, 396}}",
+    "frame" : "{{0, 0}, {640, 320}}",
     "class" : "View",
     "nodes" : [
       {
@@ -12,14 +12,14 @@
 
         ],
         "attributes" : {
-          "font_name" : "AmericanTypewriter-Bold",
+          "name" : "hours_to_go",
           "frame" : "{{285, 184}, {150, 32}}",
           "uuid" : "C5577258-4A15-4C61-B5CF-029B284B5172",
           "class" : "Label",
           "alignment" : "left",
           "text" : "00",
-          "name" : "hours_to_go",
-          "font_size" : 72
+          "font_size" : 72,
+          "font_name" : "AmericanTypewriter-Bold"
         }
       },
       {
@@ -30,14 +30,14 @@
 
         ],
         "attributes" : {
-          "font_name" : "AmericanTypewriter-Bold",
+          "name" : "label1",
           "frame" : "{{285, 184}, {150, 32}}",
           "uuid" : "1900B3CC-5CB6-4AE4-9D52-CBB3457A54CF",
           "class" : "Label",
           "alignment" : "left",
           "text" : ":",
-          "name" : "label1",
-          "font_size" : 72
+          "font_size" : 72,
+          "font_name" : "AmericanTypewriter-Bold"
         }
       },
       {
@@ -48,14 +48,14 @@
 
         ],
         "attributes" : {
-          "font_name" : "AmericanTypewriter-Bold",
+          "font_size" : 72,
           "frame" : "{{285, 184}, {150, 32}}",
           "uuid" : "C5577258-4A15-4C61-B5CF-029B284B5172",
           "class" : "Label",
           "alignment" : "center",
           "text" : "00",
-          "font_size" : 72,
-          "name" : "mins_to_go"
+          "name" : "mins_to_go",
+          "font_name" : "AmericanTypewriter-Bold"
         }
       },
       {
@@ -66,14 +66,14 @@
 
         ],
         "attributes" : {
-          "font_name" : "AmericanTypewriter-Bold",
+          "font_size" : 72,
           "frame" : "{{285, 184}, {150, 32}}",
           "uuid" : "1900B3CC-5CB6-4AE4-9D52-CBB3457A54CF",
           "class" : "Label",
           "alignment" : "left",
           "text" : ":",
-          "font_size" : 72,
-          "name" : "label1"
+          "name" : "label1",
+          "font_name" : "AmericanTypewriter-Bold"
         }
       },
       {
@@ -84,14 +84,14 @@
 
         ],
         "attributes" : {
-          "font_name" : "AmericanTypewriter-Bold",
+          "name" : "secs_to_go",
           "frame" : "{{285, 184}, {150, 32}}",
           "uuid" : "C5577258-4A15-4C61-B5CF-029B284B5172",
           "class" : "Label",
           "alignment" : "center",
           "text" : "00",
-          "name" : "secs_to_go",
-          "font_size" : 72
+          "font_size" : 72,
+          "font_name" : "AmericanTypewriter-Bold"
         }
       },
       {
@@ -119,14 +119,14 @@
 
         ],
         "attributes" : {
-          "font_name" : "<System>",
+          "name" : "start_time_label",
           "frame" : "{{285, 184}, {150, 32}}",
           "uuid" : "135A2D7B-46AA-4093-8510-A529B092B512",
           "class" : "Label",
           "alignment" : "left",
           "text" : "Start Time",
-          "name" : "start_time_label",
-          "font_size" : 18
+          "font_size" : 18,
+          "font_name" : "<System>"
         }
       },
       {
@@ -157,14 +157,14 @@
 
         ],
         "attributes" : {
-          "font_name" : "AmericanTypewriter-Bold",
+          "font_size" : 72,
           "frame" : "{{285, 184}, {150, 32}}",
           "uuid" : "C5577258-4A15-4C61-B5CF-029B284B5172",
           "class" : "Label",
           "alignment" : "center",
           "text" : "0",
-          "font_size" : 72,
-          "name" : "decimals_to_go"
+          "name" : "decimals_to_go",
+          "font_name" : "AmericanTypewriter-Bold"
         }
       },
       {
@@ -175,19 +175,19 @@
 
         ],
         "attributes" : {
-          "font_name" : "AmericanTypewriter-Bold",
+          "name" : "label1",
           "frame" : "{{285, 184}, {150, 32}}",
           "uuid" : "1900B3CC-5CB6-4AE4-9D52-CBB3457A54CF",
           "class" : "Label",
           "alignment" : "left",
           "text" : ".",
-          "name" : "label1",
-          "font_size" : 72
+          "font_size" : 72,
+          "font_name" : "AmericanTypewriter-Bold"
         }
       },
       {
         "selected" : false,
-        "frame" : "{{69, 221}, {135, 48}}",
+        "frame" : "{{69, 200}, {135, 48}}",
         "class" : "Button",
         "nodes" : [
 
@@ -207,7 +207,7 @@
       },
       {
         "selected" : false,
-        "frame" : "{{441, 221}, {135, 48}}",
+        "frame" : "{{441, 200}, {135, 48}}",
         "class" : "Button",
         "nodes" : [
 
@@ -226,55 +226,55 @@
         }
       },
       {
-        "selected" : false,
-        "frame" : "{{6, 289}, {246, 60}}",
+        "selected" : true,
+        "frame" : "{{6, 250}, {246, 60}}",
         "class" : "Label",
         "nodes" : [
 
         ],
         "attributes" : {
-          "font_name" : "<System>",
+          "font_size" : 24,
           "frame" : "{{268, 182}, {150, 32}}",
           "uuid" : "2F07CB1D-34F9-4545-B384-D69E9FD73EBB",
           "class" : "Label",
           "alignment" : "center",
           "text" : "PORT BOAT",
-          "font_size" : 24,
-          "name" : "port_boat"
+          "name" : "port_boat",
+          "font_name" : "<System>"
         }
       },
       {
         "selected" : false,
-        "frame" : "{{384.5, 289}, {246, 60}}",
+        "frame" : "{{384.5, 250}, {246, 60}}",
         "class" : "Label",
         "nodes" : [
 
         ],
         "attributes" : {
-          "font_name" : "<System>",
+          "name" : "stbd_boat",
           "frame" : "{{268, 182}, {150, 32}}",
           "uuid" : "2F07CB1D-34F9-4545-B384-D69E9FD73EBB",
           "class" : "Label",
           "alignment" : "center",
           "text" : "STBD BOAT",
-          "name" : "stbd_boat",
-          "font_size" : 24
+          "font_size" : 24,
+          "font_name" : "<System>"
         }
       },
       {
-        "selected" : true,
+        "selected" : false,
         "frame" : "{{44, 54}, {51, 31}}",
         "class" : "Switch",
         "nodes" : [
 
         ],
         "attributes" : {
-          "uuid" : "C1963FF9-9330-46D2-97FA-C1D79B657AAD",
+          "action" : "set_sound",
           "frame" : "{{318, 183}, {51, 31}}",
           "value" : true,
           "class" : "Switch",
           "name" : "sound_switch",
-          "action" : "set_sound"
+          "uuid" : "C1963FF9-9330-46D2-97FA-C1D79B657AAD"
         }
       },
       {
@@ -285,24 +285,24 @@
 
         ],
         "attributes" : {
-          "font_name" : "<System>",
+          "name" : "label2",
           "frame" : "{{268, 182}, {150, 32}}",
           "uuid" : "4F4AF1BD-5323-4B5F-91E9-E780843F4561",
           "class" : "Label",
           "alignment" : "left",
           "text" : "Sound",
-          "name" : "label2",
-          "font_size" : 18
+          "font_size" : 18,
+          "font_name" : "<System>"
         }
       }
     ],
     "attributes" : {
-      "flex" : "",
+      "border_color" : "RGBA(0.000000,0.000000,0.000000,1.000000)",
       "enabled" : true,
+      "background_color" : "RGBA(1.000000,1.000000,1.000000,1.000000)",
       "tint_color" : "RGBA(0.000000,0.478000,1.000000,1.000000)",
       "name" : "Mel_Helper",
-      "border_color" : "RGBA(0.000000,0.000000,0.000000,1.000000)",
-      "background_color" : "RGBA(1.000000,1.000000,1.000000,1.000000)"
+      "flex" : ""
     }
   }
 ]
