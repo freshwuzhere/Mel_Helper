@@ -7,12 +7,12 @@ import speech
 
 # Add Globals
 start_time = datetime.datetime.now() + datetime.timedelta(hours=1)
-port_entry = "OTUSA"
-stbd_entry = "ARTEMIS"
+port_entry = "INEOS"
+stbd_entry = "LUNA ROSSA"
 start_time_pick = start_time
 v = None
 sound_set = True
-possible_boats = ['OTUSA','SBTJ','ARTEMIS','LRBAR','GROUPAMA','ETNZ']
+possible_boats = ['INEOS','LUNA ROSSA','AM MAGIC','ETNZ']
 old_stg = 0
 old_mtg = 0
 old_stg_x10 = 0
